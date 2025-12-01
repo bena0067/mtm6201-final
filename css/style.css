@@ -1,0 +1,590 @@
+:root {
+  --fh-peach: #f6c47a;         /* main background */
+  --fh-peach-dark: #e6ac56;
+  --fh-green: #37b64b;         /* buttons */
+  --fh-green-dark: #249137;
+  --fh-orange: #f48a1f;        /* success bar */
+  --fh-deep-green: #3e5846;    /* success stories bg */
+
+  --bs-body-bg: var(--fh-peach);
+  --bs-body-font-family: "Poppins", system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: var(--fh-peach);
+  color: #222;
+}
+
+h1, h2, h3 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+/* ---------- Skip link ---------- */
+.visually-hidden-focusable:not(:focus):not(:focus-within) {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.skip-link {
+  background: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  top: 1rem;
+  left: 1rem;
+  z-index: 10000;
+}
+
+/* ---------- HERO ---------- */
+.hero-header {
+  position: relative;
+  height: 360px;
+  background-image:
+    linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3)),
+    url("../img/hero-large.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+}
+
+/* circular logo top-left */
+.hero-logo {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 20;
+}
+.hero-logo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+/* nav top-right, transparent */
+.hero-nav {
+  padding-top: 6px;
+  background: none;
+}
+.hero-nav .nav-link {
+  font-size: 0.9rem;
+  color: #ffe8c8;
+}
+.hero-nav .nav-link:hover {
+  color: #ffffff;
+}
+.btn-signup {
+  background-color: var(--fh-green);
+  color: #fff;
+  border-radius: 999px;
+  padding: 4px 18px;
+  font-size: 0.85rem;
+  border: none;
+}
+.btn-signup:hover {
+  background-color: var(--fh-green-dark);
+}
+
+/* hero overlay content */
+
+
+.hero-jump {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+.hero-jump:hover {
+  text-decoration: underline;
+}
+.hero-main-row {
+  margin-top: 18px;
+}
+.hero-buttons .btn-hero-pill {
+  border-radius: 999px;
+  padding: 4px 22px;
+  margin: 0 4px;
+  border: none;
+  font-weight: 600;
+}
+.btn-adopt,
+.btn-donate {
+  background-color: var(--fh-green);
+  color: #fff;
+}
+.btn-adopt:hover,
+.btn-donate:hover {
+  background-color: var(--fh-green-dark);
+}
+.hero-heading {
+  margin-top: 4px;
+  font-size: 2rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.7);
+}
+@media (min-width: 992px) {
+  .hero-heading {
+    font-size: 2.4rem;
+  }
+}
+
+/* ---------- Featured Campaigns ---------- */
+.section-peach {
+  background-color: var(--fh-peach);
+}
+.campaigns-section {
+  border-top: 4px solid #000;   /* thin black line like image */
+  padding-top: 16px;
+  padding-bottom: 20px;
+}
+.section-heading {
+  text-align: center;
+  font-size: 1.9rem;
+  margin-bottom: 14px;
+}
+.campaign-strip {
+  background-color: #bcd3ff;
+  padding: 10px;
+}
+.campaign-card {
+  background-color: #d7e4ff;
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.campaign-img-wrap {
+  flex: 0 0 36%;
+}
+.campaign-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.campaign-body {
+  flex: 1;
+  padding: 8px 10px;
+  font-size: 0.9rem;
+}
+.campaign-body h3 {
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+.campaign-body p {
+  font-size: 0.85rem;
+}
+.btn-campaign {
+  background-color: #f39a1d;
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: none;
+}
+.btn-campaign:hover {
+  background-color: #e27f05;
+}
+.campaign-icon {
+  margin-right: 4px;
+}
+
+/* ---------- Success Stories ---------- */
+.success-section {
+  margin-top: 0;
+}
+.success-bar {
+  background-color: var(--fh-orange);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 0;
+  border-top: 4px solid #000;
+}
+.success-section {
+  background-color: var(--fh-deep-green);
+}
+.story-card {
+  background-color: #c8d2fb;
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.story-img-wrap {
+  flex: 0 0 40%;
+}
+.story-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.story-body {
+  flex: 1;
+  padding: 8px 10px;
+  font-size: 0.87rem;
+  color: #111;
+}
+.story-body h3 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+.story-logo {
+  background-color: #f3f0dd;
+  border-radius: 24px;
+  padding: 20px;
+  max-width: 220px;
+}
+.story-logo img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* ---------- Trust / Partners ---------- */
+.trust-section {
+  border-top: 4px solid #000;
+}
+.trust-text {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.1rem;
+}
+.trust-text span {
+  font-weight: 700;
+}
+.partner-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.partner-logo {
+  width: 74px;
+  height: 74px;
+  object-fit: contain;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background-color: #fff;
+}
+.footer-strip {
+  border-top: 2px solid #000;
+  padding: 4px 0;
+}
+.footer-go {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.footer-socials {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.footer-links {
+  font-size: 0.8rem;
+}
+.footer-link {
+  color: #000;
+  text-decoration: none;
+}
+.footer-link:hover {
+  text-decoration: underline;
+}
+.footer-bottom {
+  height: 70px;
+  background-color: #f39a1d;
+  /* if you have that bottom illustration, use it here: */
+  /* background-image: url("../img/footer-graphic.png");
+     background-size: cover;
+     background-position: center; */
+}
+
+/* ---------- Small responsive tweak ---------- */
+@media (max-width: 767.98px) {
+  .campaign-card,
+  .story-card {
+    flex-direction: column;
+  }
+}
+
+
+/* ===============================
+   FEATURED CAMPAIGN SECTION
+================================ */
+
+.featured-wrapper {
+  background-color: var(--fh-peach);
+  border-top: 4px solid #000;
+  padding-bottom: 20px;
+}
+
+/* Category TAB BAR */
+.category-bar {
+  background-color: var(--fh-peach);
+  border-bottom: 4px solid #000;
+}
+
+.cat-btn {
+  background-color: #2ca134;   /* bright green */
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 6px 26px;
+  border-radius: 30px;
+  font-size: 1.05rem;
+}
+
+.category-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+/* -------- Campaign Cards Grid -------- */
+
+.campaign-grid-container {
+  background-color: #2f4638;  /* dark green block EXACT */
+  padding: 18px;
+  border-bottom: 4px solid #000;
+}
+
+/* mini cards */
+.mini-campaign-card {
+  background-color: #3b5948;
+  border-radius: 6px;
+  padding: 6px;
+  display: flex;
+  gap: 10px;
+}
+
+.campaign-mini-img {
+  width: 110px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.campaign-mini-body {
+  flex: 1;
+}
+
+.mini-text {
+  font-size: 0.87rem;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.mini-btn {
+  background-color: #ffae4e;  /* same orange as screenshot */
+  border: none;
+  padding: 2px 12px;
+  font-size: 0.8rem;
+  color: #000;
+  font-weight: 600;
+  border-radius: 4px;
+}
+/* === Featured progress bar section === */
+.progress-section {
+  background-color: #e3ecf0;
+  border-top: 4px solid #000;
+}
+
+.progress-wrapper {
+  max-width: 700px;
+}
+
+.progress-outer {
+  background-color: #e3f4e5;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.progress-inner {
+  background-color: #f4a53b;
+  border-radius: 30px;
+  padding: 12px;
+  position: relative;
+}
+
+.progress-label {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.4rem;
+  color: #4b2d7f; /* purple-ish like your Figma */
+}
+
+.btn-donate-bar {
+  background-color: #2ca134;
+  color: #fff;
+  border-radius: 999px;
+  padding: 4px 20px;
+  font-weight: 600;
+  border: none;
+}
+
+.progress-message {
+  color: #1f2c83;
+  font-size: 1rem;
+}
+
+.progress-amounts span {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* === Volunteer banner === */
+.volunteer-banner {
+  background-color: #34553b; /* dark green strip */
+  color: #ffcf7c;
+}
+
+.volunteer-banner h2 {
+  font-size: 1.6rem;
+}
+
+.btn-volunteer-signup {
+  background-color: #2ca134;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 6px 16px;
+  border: none;
+}
+.btn-volunteer-signup:hover {
+  background-color: #1f7d29;
+}
+
+
+/* =============== DONATE PAGE =============== */
+
+/* Hero background specifically for donate page */
+.hero-donate {
+  background-image:
+    linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.3)),
+    url("../images/donate-hero.jpg"); /* TODO: use your real hero image */
+  background-size: cover;
+  background-position: center center;
+}
+
+.donate-hero-content {
+  width: 100%;
+  height: 100%;
+  padding: 90px 0 20px;
+}
+
+.donate-hero-heading {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 2rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.7);
+}
+
+/* -------- Choose Your Plan -------- */
+
+.donate-plans {
+  background-color: #f6c47a;
+  border-top: 4px solid #000;
+}
+
+.donate-plans-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.6rem;
+}
+
+.plan-card {
+  background-color: #c9d5ff;
+  border-radius: 999px;
+  padding: 14px 20px;
+  text-align: center;
+  height: 100%;
+}
+
+.plan-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+.plan-card p {
+  font-size: 0.85rem;
+  margin-bottom: 0;
+}
+
+/* -------- How Your Donation Helps -------- */
+
+.donation-impact {
+  background-color: #2f4638;
+  color: #fff;
+  border-top: 4px solid #000;
+}
+
+.donation-impact h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  margin-bottom: 0.4rem;
+}
+
+/* -------- Form + Logo Section -------- */
+
+.donation-form-section {
+  background-color: #f6c47a;
+  border-top: 4px solid #000;
+}
+
+.donation-form-card {
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.donate-input {
+  background-color: #d4ddff;
+  border-radius: 2px;
+  border: 1px solid #c0c9f0;
+}
+
+.btn-donate-primary {
+  background-color: #2ca134;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 6px 24px;
+  border: none;
+}
+
+.btn-donate-primary:hover {
+  background-color: #20802a;
+}
+
+.donation-logo-wrap {
+  max-width: 260px;
+  background-color: #f7e7c9;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+/* -------- Thank-you strip -------- */
+
+.thankyou-strip {
+  background-color: #2f4638;
+  color: #ffdd9a;
+  border-top: 4px solid #000;
+}
+
+.thankyou-text {
+  font-size: 0.9rem;
+}
+
+.thankyou-icons span {
+  font-size: 1.3rem;
+}
+
+/* Small screens adjustments */
+@media (max-width: 767.98px) {
+  .donate-hero-heading {
+    font-size: 1.6rem;
+  }
+
+  .donation-logo-wrap {
+    margin-top: 1rem;
+  }
+}
