@@ -107,7 +107,7 @@ h1, h2, h3 {
 
 }
 .hero-main-row {
-  margin-top: 180px;
+  margin-top: 170px;
 }
 
 
@@ -283,20 +283,61 @@ h1, h2, h3 {
   background-color: #fff;
 }
 .footer-go {
-  font-size: 0.65rem;
+  font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 0;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: #ff9900;
+}
+
+.footer-go:hover{
+  text-decoration: underline;
+  
 }
 .footer-socials {
   font-size: 1.1rem;
   font-weight: 700;
   margin-bottom: 0;
 }
+
+/* SOCIALS DROPDOWN */
+.footer-dropdown {
+  position: relative;
+}
+
+.footer-socials {
+  font-weight: bold;
+  cursor: pointer;
+  color: black; /* your footer color */
+  text-decoration: none;
+}
+
+.footer-dropdown-menu {
+  background-color: #f6c47a; /* same orange footer */
+  border: 2px solid #000;
+  margin-top: 5px;
+}
+
+.footer-dropdown-menu .dropdown-item {
+  color: #000;
+  font-weight: 500;
+}
+
+.footer-dropdown-menu .dropdown-item:hover {
+  background-color: #ffd88c; /* lighter orange */
+}
+
+
+.footer-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 .footer-links {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: bolder;
   margin-right: 450px;
+  
   
 }
 .footer-link {
