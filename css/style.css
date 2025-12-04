@@ -22,19 +22,6 @@ h1, h2, h3 {
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
-/* ---------- Skip link ---------- */
-.visually-hidden-focusable:not(:focus):not(:focus-within) {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
-}
-
 .skip-link {
   background: #000;
   color: #fff;
@@ -145,7 +132,7 @@ h1, h2, h3 {
   background-color: var(--fh-peach);
 }
 .campaigns-section {
-  border-top: 4px solid #000;   /* thin black line like image */
+  border-top: 4px solid #000;   
   padding-top: 16px;
   padding-bottom: 20px;
   font-family: Arial, Helvetica, sans-serif;
@@ -312,7 +299,7 @@ h1, h2, h3 {
 .footer-socials {
   font-weight: bold;
   cursor: pointer;
-  color: black; /* your footer color */
+  color: black; 
   text-decoration: none;
 }
 
@@ -450,7 +437,7 @@ h1, h2, h3 {
 }
 
 .mini-btn {
-  background-color: #ffae4e;  /* same orange as screenshot */
+  background-color: #ffae4e; /*same orange as the prototype*/
   border: none;
   padding: 2px 12px;
   font-size: 0.8rem;
@@ -526,7 +513,7 @@ h1, h2, h3 {
 .hero-donate {
   background-image:
     linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.3)),
-    url("../images/banner\ donate.png"); /* TODO: use your real hero image */
+    url("../images/banner\ donate.png");
   background-size: cover;
   background-position: center;
 }
