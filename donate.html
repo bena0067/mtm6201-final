@@ -30,10 +30,6 @@
 </head>
 
 <body>
-  <!-- Skip link -->
-  <a class="visually-hidden-focusable skip-link" href="#main-content">
-    Skip to main content
-  </a>
 
   <!-- ================= HERO + NAV ================= -->
   <header class="hero-header hero-donate position-relative text-white">
@@ -70,10 +66,8 @@
       </div>
     </nav>
 
-    <!-- Hero content -->
-    <div class="donate-hero-content">
-      <div class="container-fluid px-4 h-100 d-flex flex-column justify-content-end">
-        <p class="hero-jump">Jump to the form</p>
+    <!-- Hero content --> 
+    
 
         <div class="text-center mt-2">
           <h1 class="donate-hero-heading">
@@ -87,6 +81,13 @@
         </div>
       </div>
     </div>
+    <div class="row">
+          <div class="col-12">
+            <a href="#donate-form" class="hero-jump">
+              Jump To The Form
+            </a>
+          </div>
+        </div>
   </header>
 
   <!-- ================= MAIN ================= -->
@@ -98,45 +99,42 @@
         <h2 class="text-center donate-plans-title mb-3">CHOOSE YOUR PLAN:</h2>
 
         <div class="row g-3 justify-content-center">
-          <!-- Sponsorship -->
-          <div class="col-12 col-md-6 col-lg-3">
-            <div class="plan-card plan-sponsor">
-              <h3>Sponsorship</h3>
-              <p>Sponsor a specific pet and follow their recovery journey.</p>
-            </div>
-          </div>
 
-          <!-- One-Time Donation -->
-          <div class="col-12 col-md-6 col-lg-3">
-            <div class="plan-card plan-onetime">
-              <h3>One-Time Donation</h3>
-              <p>Make an immediate impact today.</p>
-            </div>
-          </div>
+  <div class="col-12 col-md-6 col-lg-3">
+    <div class="plan-card plan-sponsor">
+      <h3><a href="#" class="plan-link">Sponsorship</a></h3>
+      <p>Sponsor a specific pet and follow their recovery journey.</p>
+    </div>
+  </div>
 
-          <!-- Monthly Giving -->
-          <div class="col-12 col-md-6 col-lg-3">
-            <div class="plan-card plan-monthly">
-              <h3>Monthly Giving</h3>
-              <p>Support ongoing care for our animals each month.</p>
-            </div>
-          </div>
+  <div class="col-12 col-md-6 col-lg-3">
+    <div class="plan-card plan-onetime">
+      <h3><a href="#" class="plan-link">One-Time Donation</a></h3>
+      <p>Make an immediate impact today.</p>
+    </div>
+  </div>
 
-          <!-- Yearly -->
-          <div class="col-12 col-md-6 col-lg-3">
-            <div class="plan-card plan-yearly">
-              <h3>Yearly</h3>
-              <p>Become a long-term partner in saving lives.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <div class="col-12 col-md-6 col-lg-3">
+    <div class="plan-card plan-monthly">
+      <h3><a href="#" class="plan-link">Monthly Giving</a></h3>
+      <p>Support ongoing care for our animals each month.</p>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-3">
+    <div class="plan-card plan-yearly">
+      <h3><a href="#" class="plan-link">Yearly</a></h3>
+      <p>Become a long-term partner in saving lives.</p>
+    </div>
+  </div>
+
+</div>
+
 
     <!-- ========== HOW YOUR DONATION HELPS ========== -->
     <section class="donation-impact py-3">
       <div class="container-fluid px-4 text-center">
-        <h2>How Your Donation Helps</h2>
+        <h2>How Does Your Donation Help</h2>
         <p>
           Your generosity directly funds essential supplies, veterinary care, and adoption programs
           that give animals a brighter future.
@@ -199,7 +197,7 @@
           <div class="col-12 col-lg-5 text-center">
             <!-- TODO: use your real path -->
             <div class="donation-logo-wrap mx-auto">
-              <img src="images/site logo.png" alt="FurEver Home logo" class="img-fluid">
+              <img src="images/logo-big.png" width="300" alt="FurEver Home logo" class="img-fluid">
             </div>
           </div>
         </div>
@@ -214,9 +212,9 @@
         </p>
         <div class="thankyou-icons d-flex gap-3">
           <!-- You can swap these for real icons/images -->
-          <span>✅</span>
-          <span>💳</span>
-          <span>🦴</span>
+          <span><img src="https://img.icons8.com/?size=100&id=XDH0Z4c2jynP&format=png&color=000000" alt="trust icon"></span>
+          <span><img src="https://img.icons8.com/?size=100&id=44833&format=png&color=000000" alt="privacy icon"></span>
+          <span><img src="https://img.icons8.com/?size=100&id=68930&format=png&color=000000" alt="secure transaction icon"></span>
         </div>
       </div>
     </section>
@@ -225,23 +223,38 @@
 
   <!-- ================= FOOTER (reuse from home) ================= -->
   <footer class="site-footer">
-    <div class="footer-strip">
-      <div class="container-fluid px-4 d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center">
-        <div>
-          <p class="footer-go">GO BACK UP</p>
-          <p class="footer-socials">SOCIALS</p>
-        </div>
 
-        <div class="footer-links text-lg-center mt-2 mt-lg-0">
-          <a href="#" class="footer-link">CONTACT US</a> |
-          <a href="#" class="footer-link">SUPPORT</a> |
-          <a href="#" class="footer-link">FAQ</a> |
-          <span class="footer-link">COPYRIGHT © 2025 FurEver Home</span>
-        </div>
+  <!-- ORANGE FOOTER (all content here now) -->
+  <div class="footer-bottom">
+    <div class="container-fluid px-4 d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center">
+
+      <div>
+        <a href="#mainNav" class="footer-go">GO BACK UP</a>
+
+       <div class="dropdown footer-dropdown">
+  <a class="footer-socials dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    SOCIALS
+  </a>
+
+  <ul class="dropdown-menu footer-dropdown-menu">
+    <li><a class="dropdown-item" href="https://facebook.com" target="_blank">Facebook</a></li>
+    <li><a class="dropdown-item" href="https://instagram.com" target="_blank">Instagram</a></li>
+    <li><a class="dropdown-item" href="https://tiktok.com" target="_blank">TikTok</a></li>
+  </ul>
+</div>
       </div>
+
+      <div class="footer-links text-lg-center mt-2 mt-lg-0">
+        <a href="#" class="footer-link">CONTACT US</a> |
+        <a href="#" class="footer-link">SUPPORT</a> |
+        <a href="#" class="footer-link">FAQ</a> |
+        <span class="footer-link">COPYRIGHT © 2025 FurEver Home</span>
+      </div>
+
     </div>
-    <div class="footer-bottom"></div>
-  </footer>
+  </div>
+
+</footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
