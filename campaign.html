@@ -36,11 +36,13 @@
   </a>
 
   <!-- ============ HEADER / NAV ============ -->
-  <header class="hero-header position-relative text-white">
+  <header class="hero-header hero-campaign position-relative text-white">
     <!-- Logo top-left -->
     <div class="hero-logo">
       <img src="images/site logo.png" alt="FurEver Home logo">
     </div>
+
+
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark hero-nav">
@@ -64,7 +66,9 @@
             <li class="nav-item"><a class="nav-link" href="#">News</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            <li class="nav-item ms-lg-3">
+            <li class="nav-item ms-lg-3">    
+              <nav id="top-nav" class="navbar navbar-expand-lg navbar-dark hero-nav">
+
               <a href="#" class="btn btn-signup">Sign up</a>
             </li>
           </ul>
@@ -73,9 +77,7 @@
     </nav>
 
     <!-- Campaign HERO (different text/buttons from home) -->
-    <div class="hero-overlay">
-      <div class="container-fluid px-4 h-100 d-flex flex-column justify-content-end">
-        <p class="hero-jump">Jump to Featured Campaign</p>
+     
 
         <div class="text-center mt-2">
           <h1 class="hero-heading animate__animated animate__fadeInUp">
@@ -89,6 +91,12 @@
         </div>
       </div>
     </div>
+    <div class="row">
+          <div class="col-12">
+            <a href="#featured-campaign" class="hero-jump">
+              Jump To Our Featured Campaign
+            </a>
+          </div>
   </header>
 
   <!-- ============ MAIN ============ -->
@@ -102,7 +110,7 @@
         <div class="category-bar d-flex justify-content-center gap-4 py-2">
           <button class="cat-btn">Adoption</button>
           <button class="cat-btn">Donations</button>
-          <button class="cat-btn">
+          <button class="cat-img">
             <img src="images/site logo.png" class="category-logo" alt="">
           </button>
           <button class="cat-btn">Volunteer</button>
@@ -201,24 +209,18 @@
     <section id="featured-campaign" class="progress-section py-4">
       <div class="container-fluid px-4 text-center">
 
-        <div class="progress-wrapper mx-auto">
-          <div class="progress-outer">
-            <div class="progress-inner">
-              <span class="progress-label">Featured Campaign</span>
-            </div>
-          </div>
+        
+  <div class="d-flex justify-content-between mt-2 progress-amounts">
+          <span>$25,289</span>
+          <span>$50,000</span>
         </div>
-
         <button class="btn btn-donate-bar mt-2">DONATE</button>
 
         <p class="progress-message mt-2">
           "Donate and Help Build Our New Shelter"
         </p>
 
-        <div class="d-flex justify-content-between mt-2 progress-amounts">
-          <span>$25,289</span>
-          <span>$50,000</span>
-        </div>
+      
       </div>
     </section>
 
@@ -235,25 +237,38 @@
   </main>
 
   <!-- ============ FOOTER (same as home) ============ -->
-  <footer class="site-footer">
-    <div class="footer-strip">
-      <div class="container-fluid px-4 d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center">
-        <div>
-          <p class="footer-go">GO BACK UP</p>
-          <p class="footer-socials">SOCIALS</p>
-        </div>
+<footer class="site-footer">
 
-        <div class="footer-links text-lg-center mt-2 mt-lg-0">
-          <a href="#" class="footer-link">CONTACT US</a> |
-          <a href="#" class="footer-link">SUPPORT</a> |
-          <a href="#" class="footer-link">FAQ</a> |
-          <span class="footer-link">COPYRIGHT © 2025 FurEver Home</span>
-        </div>
+  <div class="footer-bottom">
+    <div class="container-fluid px-4 d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center">
+
+      <div>
+        <a href="#top-nav" class="footer-go">GO BACK UP</a>
+
+<div class="dropdown footer-dropdown">
+  <a class="footer-socials dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    SOCIALS
+  </a>
+
+  <ul class="dropdown-menu footer-dropdown-menu">
+    <li><a class="dropdown-item" href="https://facebook.com" target="_blank">Facebook</a></li>
+    <li><a class="dropdown-item" href="https://instagram.com" target="_blank">Instagram</a></li>
+    <li><a class="dropdown-item" href="https://tiktok.com" target="_blank">TikTok</a></li>
+  </ul>
+</div>
       </div>
-    </div>
 
-    <div class="footer-bottom"></div>
-  </footer>
+      <div class="footer-links text-lg-center mt-2 mt-lg-0">
+        <a href="#" class="footer-link">CONTACT US</a> |
+        <a href="#" class="footer-link">SUPPORT</a> |
+        <a href="#" class="footer-link">FAQ</a> |
+        <span class="footer-link">COPYRIGHT © 2025 FurEver Home</span>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
 
   <!-- Bootstrap JS -->
   <script

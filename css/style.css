@@ -368,15 +368,34 @@ h1, h2, h3 {
 ================================ */
 
 .featured-wrapper {
-  background-color: var(--fh-peach);
   border-top: 4px solid #000;
-  padding-bottom: 20px;
+  padding-bottom: 20px; 
+}
+
+.hero-campaign {
+    background-image: url("../images/Rectangle\ 2.png");
+
+}
+
+.hero-overlay {
+  margin-top: 150px;
+
+}
+
+.hero-heading{
+  margin-top: 170px;
 }
 
 /* Category TAB BAR */
 .category-bar {
   background-color: var(--fh-peach);
   border-bottom: 4px solid #000;
+}
+
+.cat-img{
+  border-radius: 50%;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 .cat-btn {
@@ -390,9 +409,12 @@ h1, h2, h3 {
 }
 
 .category-logo {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
+  background-color: #000;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 /* -------- Campaign Cards Grid -------- */
@@ -440,12 +462,9 @@ h1, h2, h3 {
 }
 /* === Featured progress bar section === */
 .progress-section {
-  background-color: #e3ecf0;
   border-top: 4px solid #000;
-}
-
-.progress-wrapper {
-  max-width: 700px;
+  background-image: url("..//images/Rectangle\ 5.png");
+  
 }
 
 .progress-outer {
@@ -515,7 +534,7 @@ h1, h2, h3 {
 .hero-donate {
   background-image:
     linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.3)),
-    url("../images/donate-hero.jpg"); /* TODO: use your real hero image */
+    url("../images/Rectangle\ 2.png"); /* TODO: use your real hero image */
   background-size: cover;
   background-position: center center;
 }
