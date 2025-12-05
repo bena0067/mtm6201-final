@@ -121,11 +121,6 @@ h1, h2, h3 {
   font-size: 2rem;
   text-shadow: 0 2px 4px rgba(0,0,0,0.7);
 }
-@media (min-width: 992px) {
-  .hero-heading {
-    font-size: 2.4rem;
-  }
-}
 
 /* ---------- Featured Campaigns ------------------------------------------------------------------------------------------------------------------- */
 .section-peach {
@@ -333,6 +328,7 @@ h1, h2, h3 {
 .footer-link {
   color: #000;
   text-decoration: none;
+  font-size: large;
   
 }
 .footer-link:hover {
@@ -344,14 +340,218 @@ h1, h2, h3 {
   background-image: url("../images/Rectangle\ 8.png");
 }
 
+/* ===================== */
+/*  HERO SECTION – IPAD FIX */
+/* ===================== */
 
-/* ---------- Small responsive tweak ---------- */
-@media (max-width: 767.98px) {
-  .campaign-card,
-  .story-card {
-    flex-direction: column;
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* Make mobile/tablet nav open to the right side */
+@media (max-width: 991px) {
+  #mainNav {
+    text-align: right;
+  }
+
+  #mainNav .navbar-nav {
+    margin-left: auto !important;   /* push menu to right */
+  }
+
+  #mainNav .nav-item {
+    text-align: right;               /* align items inside */
   }
 }
+
+
+  /* Fix logo size + positioning */
+  .hero-logo img {
+    width: 120px;        /* adjust as needed */
+    margin: 20px;
+  }
+
+  /* Hero container spacing fix */
+  .hero-header {
+    height: 70vh;             /* better tablet height */
+    background-position: center top;
+    background-size: cover; 
+  }
+
+  /* Navigation right spacing fix */
+  .navbar {
+    padding-right: 20px !important;
+  }
+
+  /* Menu button fix */
+  .navbar-toggler {
+    transform: scale(1.3);     /* make it easier to tap */
+    margin-right: 10px;
+  }
+
+  /* Keep hero text centered and higher */
+  .hero-main-row {
+    margin-top: 140px !important; 
+    text-align: center;
+  }
+
+  .home-heading {
+    font-size: 2rem; 
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .hero-buttons .btn {
+    padding: 10px 22px;
+    font-size: 1rem;
+  }
+
+  /* Jump link fixes */
+  .hero-jump {
+    font-size: 1rem;
+    margin-left: 20px;
+    margin-top: -20px;
+    display: inline-block;
+  }
+}
+
+
+  /* “Featured Campaigns” section */
+  .campaigns-section .section-heading {
+    font-size: 1.4rem;
+  }
+
+  .campaign-card {
+    display: flex;
+    gap: 10px;
+  }
+
+  .campaign-img-wrap {
+    flex: 0 0 40%;                  /* image on left */
+  }
+
+  .campaign-body {
+    flex: 1;
+  }
+
+  .campaign-body h3 {
+    font-size: 1rem;
+  }
+
+  .campaign-body p {
+    font-size: 0.85rem;
+  }
+
+  /* Success stories – make cards more compact */
+  .story-card .story-body h3 {
+    font-size: 1rem;
+  }
+
+  .story-card .story-body p {
+    font-size: 0.85rem;
+  }
+
+  /* Partner stats – keep text readable */
+  .trust-text {
+    font-size: 0.9rem;
+  }
+
+  .partner-logo {
+    max-width: 80px;
+  }
+
+  /* Footer on iPad */
+  .footer-bottom {
+    padding: 15px 0;
+  }
+
+  .footer-links {
+    font-size: 0.8rem;
+  }
+
+/* =========================
+   MOBILE HERO (≤ 767px)
+   ========================= */
+@media (max-width: 767.98px) {
+
+  /* Hero container */
+  .hero-header {
+    height: 65vh;                    /* not too tall */
+    background-position: center top; /* keep dog face in frame */
+    background-size: cover;
+  }
+
+  /* Logo size */
+  .hero-logo img {
+    width: 110px;
+    margin: 10px 0 0 10px;
+  }
+
+  /* Main hero row: bring content higher + add padding */
+  .hero-main-row {
+    margin-top: 140px;               /* move heading/buttons up */
+    padding: 0 1rem;
+  }
+
+  /* Heading text */
+  .home-heading {
+    font-size: 1.35rem;
+    line-height: 1.3;
+    max-width: 95%;
+    margin: 0 auto 0.75rem;
+  }
+
+  /* Buttons stacked full-ish width */
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .hero-buttons .btn-hero-pill {
+    width: 75%;
+    max-width: 260px;
+    font-size: 0.9rem;
+    padding: 6px 16px;
+  }
+
+  /* Jump link under hero, readable */
+  .hero-jump {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+    display: inline-block;
+    margin: 8px 0 0 10px;
+  }
+
+  /* Keep burger menu snug on right */
+  .navbar-toggler {
+    margin-right: 10px;
+    transform: scale(1.1);
+  } 
+  .footer-bottom {
+    padding: 15px 0;
+  }
+
+  .footer-links {
+    font-size: 0.9rem;
+    width: 500px;
+  }
+}
+
+ 
+@media (max-width: 767px) {
+
+#mainNav {
+    text-align: right;
+  }
+
+  #mainNav .navbar-nav {
+    margin-left: auto !important;   /* push menu to right */
+  }
+
+  #mainNav .nav-item {
+    text-align: right;               /* align items inside */
+  }
+}
+
 
 
 /* =================================================================================================================================================================================================================================================================================================================================================== CAMPAIGN SECTION
@@ -641,15 +841,4 @@ margin-bottom: 20px;
 
 .thankyou-icons span {
   font-size: 1.3rem;
-}
-
-/* Small screens adjustments */
-@media (max-width: 767.98px) {
-  .donate-hero-heading {
-    font-size: 1.6rem;
-  }
-
-  .donation-logo-wrap {
-    margin-top: 1rem;
-  }
 }
