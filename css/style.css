@@ -13,6 +13,12 @@
 .body{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+ .body, html {
+    overflow-x: hidden !important;
+  }
+
+
 body {
   background-color: var(--fh-peach);
   color: #222;
@@ -62,6 +68,10 @@ h1, h2, h3 {
 .hero-nav {
   padding-top: 6px;
   background: none;
+}
+
+.home-heading{
+  font-family: Arial, Helvetica, sans-serif;
 }
 .hero-nav .nav-link {
   font-size: 0.9rem;
@@ -120,6 +130,7 @@ h1, h2, h3 {
 .hero-heading {
   font-size: 2rem;
   text-shadow: 0 2px 4px rgba(0,0,0,0.7);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* ---------- Featured Campaigns ------------------------------------------------------------------------------------------------------------------- */
@@ -240,7 +251,7 @@ h1, h2, h3 {
   border-radius: 50%;
 }
 
-/* ---------- Trust / Partners ---------- */
+/* ---------- Trust / Partners ----///////////////////////////////////////////////////////////////////////////////////////------ */
 .trust-section {
   border-top: 4px solid #000;
 }
@@ -273,7 +284,7 @@ h1, h2, h3 {
   text-transform: uppercase;
   margin-bottom: 30px;
   text-decoration: none;
-  color: #ff9900;
+  color: #763f00;
 }
 
 .footer-go:hover{
@@ -337,8 +348,7 @@ h1, h2, h3 {
 .footer-bottom {
   padding: 40px 0;
   border-top: 4px solid #000;
-  background-image: url("../images/Rectangle\ 8.png");
-}
+background-color: #7dc0d7;}
 
 /* ===================== */
 /*  HERO SECTION*/
@@ -519,7 +529,6 @@ h1, h2, h3 {
     margin: 8px 0 0 10px;
   }
 
-  /* Keep burger menu snug on right */
   .navbar-toggler {
     margin-right: 10px;
     transform: scale(1.1);
@@ -647,10 +656,20 @@ h1, h2, h3 {
 }
 /* === Featured progress bar section === */
 .progress-section {
-  border-top: 4px solid #000;
-  background-image: url("..//images/Rectangle\ 5.png");
-  background-color: #e5e4e4;
+  
+  background-image: url("../images/Rectangle\ 5.png"); 
 }
+
+
+ .progress-section {
+    background-size: contain !important; 
+    background-position: top center !important;
+    background-repeat: no-repeat;
+
+    padding-top: 1.8rem !important;
+    padding-bottom: 1.8rem !important;
+  }
+
 
 
 .btn-donate-bar {
@@ -701,6 +720,278 @@ h1, h2, h3 {
 .btn-volunteer-signup:hover {
   background-color: #1f7d29;
 }
+
+/* ===============================
+   TABLET / IPAD LAYOUT – CAMPAIGN
+   768px – 1024px
+   =============================== */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* Whole campaign page wrapper */
+  .featured-wrapper {
+    background-color: #fdd7a0;            /* light peach band */
+  }
+
+  /* --- CATEGORY BAR (Adoption / Donations / logo / Volunteer / Events) --- */
+  .category-bar {
+    background-color: #fdd7a0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 10px 40px;
+  }
+
+  .cat-btn {
+    background-color: #2b7b1f;
+    color: #fff;
+    border-radius: 999px;
+    border: none;
+    padding: 6px 26px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .cat-img {
+    border: none;
+    background: transparent;
+    padding: 0;
+  }
+
+  .category-logo {
+    width: 70px;
+    height: auto;
+    display: block;
+  }
+
+  /* --- DARK GREEN GRID AREA --- */
+  .campaign-grid-container {
+    background-color: #355840;
+    padding: 18px 32px 24px;
+  }
+
+  .mini-campaign-card {
+    border-radius: 4px;
+    padding: 6px 8px;
+    align-items: center;
+  }
+
+  .campaign-mini-img {
+    width: 115px;
+    height: auto;
+    margin-right: 8px;
+    object-fit: cover;
+  }
+
+  .campaign-mini-body {
+    font-size: 0.85rem;
+    line-height: 1.3;
+  }
+
+  .mini-text {
+    margin-bottom: 4px;
+  }
+
+  .mini-btn {
+    background-color: #f9a334;
+    border: none;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    padding: 2px 10px;
+  }
+
+  /* --- FEATURED CAMPAIGN SECTION --- */
+ /* iPad + mobile: keep image inside nicely */
+@media (max-width: 1024px) {
+  .progress-section {
+    background-size: contain;      /* show full image */
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+  .progress-section h2,
+  .progress-section .featured-title {
+    font-family: "Playfair Display", serif;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+
+  /* outer rounded bar */
+  .progress-bar-outer {
+    max-width: 620px;
+    margin: 0 auto;
+    background-color: #e7f4e4;
+    border-radius: 40px;
+    padding: 6px;
+  }
+
+  /* inner orange bar */
+  .progress-bar-inner {
+    width: 55%;     
+    height: 22px;
+    border-radius: 40px;
+    background-color: #f4a533;
+  }
+
+  .progress-amounts {
+    max-width: 620px;
+    margin: 6px auto 0;
+    font-weight: 500;
+  }
+
+  .btn-donate-bar {
+    margin-top: 8px;
+    padding: 6px 24px;
+    border-radius: 999px;
+    background-color: #2b7b1f;
+    color: #fff;
+    border: none;
+  }
+
+  .progress-message {
+    margin-top: 6px;
+    font-size: 0.95rem;
+  }
+
+  /* --- VOLUNTEER BANNER --- */
+  .volunteer-banner {
+    background-color: #355840;
+    padding-top: 18px;
+    padding-bottom: 22px;
+  }
+
+  .volunteer-banner h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+
+  .btn-volunteer-signup {
+    background-color: #2b7b1f;
+    color: #fff;
+    border-radius: 999px;
+    padding: 6px 24px;
+    border: none;
+    font-size: 0.9rem;
+  }
+  
+}
+
+
+/* ==========================
+   MOBILE LAYOUT – CAMPAIGN
+   ========================.................................................................................................................................== */
+@media (max-width: 767px) {
+
+  /* --- CATEGORY BAR: 2 ROWS --- */
+  .category-bar {
+    flex-wrap: wrap;              /* allow wrapping */
+    gap: 0.75rem;
+    padding: 8px 12px;
+    justify-content: center;
+  }
+
+  /* text buttons: 2 per row */
+  .cat-btn {
+    flex: 0 1 45%;                /* roughly half width */
+    text-align: center;
+    padding: 6px 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .cat-img {
+    flex: 0 1 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .category-logo {
+    width: 70px;
+    height: auto;
+  }
+  
+
+  /* --- GREEN MINI-CAMPAIGN GRID --- */
+  .campaign-grid-container {
+    padding: 12px;
+  }
+
+  .mini-campaign-card {
+    padding: 8px;
+    align-items: flex-start;
+  }
+
+  .campaign-mini-img {
+    width: 90px;
+    height: auto;
+    margin-right: 8px;
+    object-fit: cover;
+  }
+
+  .campaign-mini-body {
+    font-size: 0.85rem;
+    line-height: 1.3;
+  }
+
+  .mini-btn {
+    font-size: 0.78rem;
+    padding: 2px 10px;
+  }
+
+
+  /* --- FEATURED CAMPAIGN / PROGRESS BAR --- */
+ 
+
+
+  .btn-donate-bar {
+    margin-top: 10px;
+    padding: 6px 24px;
+  }
+
+  .progress-message {
+    margin-top: 6px;
+    font-size: 0.9rem;
+  }
+
+  /* --- VOLUNTEER BANNER --- */
+  .volunteer-banner {
+    text-align: center;
+    padding: 16px 12px 20px;
+  }
+
+  .volunteer-banner h2 {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+  }
+
+  .btn-volunteer-signup {
+    width: 70%;
+    max-width: 260px;
+    margin: 0 auto;
+    display: inline-block;
+  }
+}
+
+
+
+/* MOBILE — tighten Featured Campaign background */
+@media (max-width: 767px) {
+
+  .progress-section {
+    background-size: contain !important;   /* show whole image smaller */
+    background-position: top center !important;
+    background-repeat: no-repeat;
+
+    /* reduce spacing so image doesn't stretch the section */
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+}
+
 
 
 /* =============== DONATE PAGE ======================================================================================================================================================================================================================================================================================================= */
@@ -837,4 +1128,290 @@ margin-bottom: 20px;
 
 .thankyou-icons span {
   font-size: 1.3rem;
+}
+
+/* =========================================
+   DONATE PAGE – IPAD / TABLET
+   ============================////////////////////////////////////////////////////////////////////////////////////////============= */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* HERO TEXT + BUTTONS */
+  .hero-donate .donate-hero-heading {
+    font-size: 1.6rem;
+    max-width: 620px;
+    margin: 0 auto 10px;
+    text-align: center;
+  }
+
+  .hero-donate .hero-buttons {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .hero-donate .hero-buttons .btn-hero-pill {
+    padding-inline: 28px;
+  }
+
+  .hero-donate .hero-jump {
+    display: inline-block;
+    margin: 8px 0 0 20px;
+    font-size: 0.9rem;
+  }
+
+  /* CHOOSE YOUR PLAN SECTION */
+  .donate-plans {
+    background-color: #fdd7a0; 
+    padding: 16px 40px 22px;
+  }
+
+  .donate-plans-title {
+    font-family: "Playfair Display", serif;
+    font-size: 1.4rem;
+    margin-bottom: 14px;
+  }
+
+  .donate-plans .plan-card {
+    max-width: 280px;
+    margin-inline: auto;
+    background-color: #f2f0ff;
+    border-radius: 50px;
+    padding: 10px 18px;
+    text-align: center;
+  }
+
+  .donate-plans .plan-card h3 {
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+  }
+
+  .donate-plans .plan-card p {
+    font-size: 0.8rem;
+    line-height: 1.25;
+    margin-bottom: 0;
+  }
+
+  .donate-plans .plan-link {
+    text-decoration: none;
+    color: #1f5e1f;
+  }
+
+  /* HOW YOUR DONATION HELPS*/
+  .donation-impact {
+    background-color: #355840;
+    color: #ffffff;
+    text-align: center;
+    padding: 18px 40px 14px;
+  }
+
+  .donation-impact h2 {
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+  }
+
+  .donation-impact p {
+    font-size: 0.9rem;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  /* FORM + LOGO SECTION */
+@media (min-width: 768px) and (max-width: 1366px) {
+
+  .donation-form-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 20px !important;
+    box-sizing: border-box;
+  }
+
+  .donation-form-section .row {
+    margin: 0 !important;
+  }
+
+  body, html {
+    overflow-x: hidden !important;
+  }
+
+  /* Form inputs adjust */
+  .donate-input {
+    width: 100% !important;
+  }
+}
+
+  .donation-logo-wrap img {
+    max-width: 260px;
+    height: auto;
+  }
+
+  /* THANK YOU STRIP + ICONS */
+  .thankyou-strip {
+    background-color: #355840;
+    color: #ffebc0;
+  }
+
+  .thankyou-text {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+
+  .thankyou-icons img {
+    width: 52px;
+    height: auto;
+  }
+}
+
+/* ========== DONATE PAGE – MOBILE LAYOUT ========== */
+@media (max-width: 767px) {
+
+  /* Prevent sideways scroll */
+  html, body {
+    overflow-x: hidden;
+  }
+
+  /* HERO */
+  .hero-donate {
+    min-height: 420px;
+    background-position: center top;
+    background-size: cover;
+  }
+
+  .donate-hero-heading {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    max-width: 260px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    margin-top: 0.75rem;
+  }
+
+  .hero-buttons .btn-hero-pill {
+    display: block;
+    width: 70%;
+    max-width: 260px;
+    margin: 0.25rem auto;
+  }
+
+  .hero-jump {
+    display: block;
+    font-size: 0.85rem;
+    padding: 0.4rem 0.75rem;
+    text-align: left;
+    margin-left: 0.75rem;
+  }
+
+  .donate-plans-title {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .donate-plans .plan-card {
+    max-width: 290px;
+    margin: 0.25rem auto;
+    text-align: center;
+    border-radius: 999px;
+    padding: 0.4rem 0.75rem;
+  }
+
+  .donate-plans .plan-card h3 {
+    margin-bottom: 0.15rem;
+    font-size: 0.9rem;
+  }
+
+  .donate-plans .plan-card p {
+    font-size: 0.75rem;
+    margin-bottom: 0;
+  }
+
+  .plan-link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* "How Your Donation Helps" strip */
+  .donation-impact {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
+
+  .donation-impact h2 {
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .donation-impact p {
+    font-size: 0.75rem;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .donation-form-section .row {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .donation-form-card {
+    width: 100%;
+    max-width: 330px;
+    margin: 0 auto;
+    padding: 16px 18px;
+    border-radius: 24px;
+  }
+
+  .donate-input {
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 0.35rem 0.5rem;
+  }
+
+  .donation-form-card .form-label {
+    font-size: 0.8rem;
+  }
+
+  .btn-donate-primary {
+    padding: 0.45rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .donation-logo-wrap {
+    margin: 0.75rem auto 0;
+    max-width: 220px;
+  }
+
+  .donation-logo-wrap img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Thank-you strip */
+  .thankyou-strip {
+    font-size: 0.72rem;
+    text-align: left;
+  }
+
+  .thankyou-text {
+    max-width: 330px;
+  }
+
+  .thankyou-icons img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .footer-bottom {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .footer-links {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .footer-go,
+  .footer-socials {
+    font-size: 0.8rem;
+  }
 }
