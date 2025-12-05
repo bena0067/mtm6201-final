@@ -1,8 +1,8 @@
 :root {
   --fh-peach: #f6c47a;         /* main background */
   --fh-peach-dark: #e6ac56;
-  --fh-green: #37b64b;         /* buttons */
-  --fh-green-dark: #249137;
+  --fh-green: #1f6a2b;         /* darker green for better contrast */
+  --fh-green-dark: #12411a;    /* darker hover green */
   --fh-orange: #f48a1f;        /* success bar */
   --fh-deep-green: #3e5846;    /* success stories bg */
 
@@ -13,6 +13,9 @@
 .body{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+
+
 
  .body, html {
     overflow-x: hidden !important;
@@ -74,8 +77,8 @@ h1, h2, h3 {
   font-family: Arial, Helvetica, sans-serif;
 }
 .hero-nav .nav-link {
-  font-size: 0.9rem;
-  color: #ffe8c8;
+  font-size: 1.2rem;
+  color: #3cff00;
 }
 .hero-nav .nav-link:hover {
   color: #ffa600;
@@ -137,6 +140,8 @@ h1, h2, h3 {
 .section-peach {
   background-color: var(--fh-peach);
 }
+
+
 .campaigns-section {
   border-top: 4px solid #000;   
   padding-top: 16px;
@@ -666,8 +671,8 @@ background-color: #7dc0d7;}
     background-position: top center !important;
     background-repeat: no-repeat;
 
-    padding-top: 1.8rem !important;
-    padding-bottom: 1.8rem !important;
+    padding-top: 2.7rem !important;
+    padding-bottom: 2.7rem !important;
   }
 
 
@@ -688,14 +693,9 @@ background-color: #7dc0d7;}
 }
 
 .progress-message {
-  color: #1f2c83;
-  font-size: 1rem;
+  color: #051682;
+  font-size: 1.2rem;
   margin-top: 50px;
-}
-
-.progress-amounts span {
-  font-size: 1.1rem;
-  font-weight: 600;
 }
 
 /* === Volunteer banner === */
@@ -1027,20 +1027,23 @@ background-color: #7dc0d7;}
 
 .plan-link {
   text-decoration: none;
-  color: #000; /* black text */
+  color: #fff; /* white text for strong contrast */
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   padding: 4px 10px;
   border-radius: 20px;
-  background-color: #9ad17b; /* green pill */
+  background-color: #1f6a2b; /* darker green pill */
   display: inline-block;
 }
 
 .plan-link:hover {
-  background-color: #2d9700; /* darker green */
+  background-color: #000000; /* even darker on hover */
   color: #fff;
   transition: 0.2s ease;
 }
+
+
+
 
 .donate-plans-title {
   font-family: Arial, Helvetica, sans-serif;
@@ -1173,7 +1176,7 @@ margin-bottom: 20px;
   .donate-plans .plan-card {
     max-width: 280px;
     margin-inline: auto;
-    background-color: #f2f0ff;
+    background-color: #d4ddff;
     border-radius: 50px;
     padding: 10px 18px;
     text-align: center;
@@ -1192,7 +1195,7 @@ margin-bottom: 20px;
 
   .donate-plans .plan-link {
     text-decoration: none;
-    color: #1f5e1f;
+    color: #ffffff;
   }
 
   /* HOW YOUR DONATION HELPS*/
@@ -1327,7 +1330,7 @@ margin-bottom: 20px;
 
   .plan-link {
     text-decoration: none;
-    color: inherit;
+    color: white;
   }
 
   /* "How Your Donation Helps" strip */
@@ -1414,4 +1417,12 @@ margin-bottom: 20px;
   .footer-socials {
     font-size: 0.8rem;
   }
+}
+/* Force focus outline on navbar links */
+.navbar .nav-link:focus-visible,
+.navbar .btn-signup:focus-visible,
+.navbar-toggler:focus-visible {
+  outline: 3px solid #000 !important;
+  outline-offset: 5px !important;
+  border-radius: 6px; /* optional */
 }
