@@ -69,13 +69,6 @@ Solution:
 - Wrapped form in Bootstrap column constraints  
 - Adjusted padding per breakpoint  
 
-### **4. Matching Figma Exactly**  
-The project required pixel-accurate alignment.  
-I used:  
-- Careful measurements inside Figma  
-- Adjusted spacing with `gap`, `padding`, and `margin`  
-- Separate rules for typography to match visually
-
 ---
 
 ## What I Learned  
@@ -83,7 +76,6 @@ I used:
 - How to convert a complete Figma design into a fully functioning website  
 - How to customize Bootstrap using CSS variables and overrides  
 - How to handle responsive design across desktop, tablet, and mobile  
-- How to organize and optimize images for performance  
 - How to structure a multi-page website with consistent components  
 - Increased understanding of accessibility, semantic HTML, and UX considerations  
 
@@ -99,22 +91,16 @@ I used:
 - Google Fonts: **Playfair Display**, **Poppins**
 
 ### **Images & Icons**
-- All primary images were created or edited by me.  
+- All primary images were created or edited by me.
+-some images were AI generated  
 - If any stock images were used, they came from free-to-use resources such as:  
   - Unsplash  
   - Icons8 (for trust/security icons)  
-- Partner logos and illustration assets were sourced responsibly.  
 
 ### **Design Tools**
 - Figma (all mockups and layouts)  
 - VS Code (development)  
 - GitHub Pages (deployment)
-
----
-
-## Live Website  
- **https://yourusername.github.io/mtm6201-final**  
-(Replace with your actual GitHub Pages link)
 
 ---
 
